@@ -46,8 +46,8 @@
             scene.background = new THREE.Color("#E2DFE1");
 
             //Camera
-            const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 3000);
-            camera.position.set(0, 0.5, 1)
+            const camera = new THREE.PerspectiveCamera(100, window.innerWidth / window.innerHeight, 0.1, 3000);
+            camera.position.set(0, 0, 1)
 
             //render
             const renderer = new THREE.WebGLRenderer({antialias: true})
@@ -118,7 +118,7 @@
             //OrbitControls
             const controls = new OrbitControls(camera, renderer.domElement);
             controls.autoRotate = true;
-            controls.autoRotateSpeed = 5;
+            controls.autoRotateSpeed = 2;
             controls.enableDamping = true;
 
             //Resize
